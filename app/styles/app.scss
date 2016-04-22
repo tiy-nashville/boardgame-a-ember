@@ -23,7 +23,8 @@ li {
 .header-container {
   margin: auto;
   max-width: 65rem;
-  background: blue;
+
+  border-bottom: 0.2rem  grey;
 
     &_items {
       display: flex;
@@ -47,6 +48,7 @@ li {
   display: flex;
   justify-content: space-between;
 
+
 }
 
 .game-title {
@@ -59,24 +61,21 @@ li {
 .main-content_container {
   margin: auto;
   max-width: 65rem;
-  background-color: purple;
-  display: flex;
+  // background-color: purple;
+  // display: flex;
 
 }
 
-.message-sidebar {
-  border: 1rem solid black;
-
-}
 
 .main-content {
   margin: auto;
   max-width: 65rem;
-
+  padding: 1rem;
 
 }
 
 .main-content_title {
+
 
 }
 
