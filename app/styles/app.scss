@@ -27,6 +27,16 @@
   // color: green;
 }
 
+.game-profile {
+  margin: 2rem;
+}
+
+.whatever {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 65rem;
+}
+
 .game-name_container {
   display: flex;
   flex-direction: column;
@@ -67,4 +77,12 @@
 
 .game-pic {
   width: 100%;
+}
+
+.game-info-stuff {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 20rem;
+  font-size: 2rem;
 }
