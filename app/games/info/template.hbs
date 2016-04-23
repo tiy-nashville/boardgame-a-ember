@@ -14,7 +14,7 @@
 
 
 <div class="chatroom-container">
-  {{#if session.isAuthenticated}}
+  {{!-- {{#if session.isAuthenticated}} --}}
     <div class="chatroom-container__content">
       <p class="message-text">
         <span class="created-at">(timestamp)</span>
@@ -27,7 +27,7 @@
       <button class="post-btn">Post</button>
     </form>
 
-  {{else}}
+  {{!-- {{else}}
 
     <div class="denial-page">
       <p class="denial-text">You must be looged in to view the chat.</p>
@@ -39,5 +39,5 @@
         <button class="denial-button">Register</button>
       {{/link-to}}
     </div>
-  {{/if}}
+  {{/if}} --}}
 </div>
