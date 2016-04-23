@@ -10,7 +10,10 @@
 body {
   max-width: 100%;
   margin: 0;
-  // color: $title-white;
+
+  background: $brand-tan;
+  color: $brand-brown;
+
   font-family: sans-serif;
 }
 
@@ -20,13 +23,23 @@ li {
 
 button {
   padding: 0.5rem 1rem;
+
   border: 0;
   border-radius: 0.3rem;
+
   outline: 0;
+
+  background: $brand-greenish;
+  color: $brand-brown;
+
   font-size: 1rem;
   cursor: pointer;
 }
 
 input {
   outline: 0;
+}
+
+a:link {
+  text-decoration: none;
 }
