@@ -17,3 +17,32 @@
 
   font-size: 1rem;
 }
+
+.message-text {
+  padding: $gutter * 4;
+
+  border-radius: 0.19rem;
+  background: $brand-turquoise;
+  color: $brand-greenish;
+}
+
+.post__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-width: 50rem;
+}
+
+.post-input {
+  width: 80%;
+
+  border: 0;
+  border-bottom: 0.1rem solid $brand-brown;
+
+  background: transparent;
+}
+
+.post-btn {
+  width: 20%;
+}
