@@ -1,5 +1,6 @@
 .header-container {
   max-width: 65rem;
+  margin: auto;
 
   background-color: $brand-greenish;
 
@@ -18,7 +19,8 @@
 .header-item {
   padding-left: $gutter * 4;
 
-  color: darken($brand-turquoise, 20%);
+  color: $brand-brown;
+  font-weight: lighter;
 }
 
 .header-text {
@@ -43,6 +45,6 @@
   color: $brand-brown;
 
   &:hover {
-    border-bottom: $gutter solid $brand-turquoise;
+    border-bottom: $gutter solid $brand-magenta;
   }
 }
