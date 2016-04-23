@@ -1,4 +1,9 @@
-$title-white: #fff;
+@import 'variables';
+@import 'base';
+@import 'chat';
+@import 'register';
+@import 'login';
+
 
 * {
   box-sizing: border-box;
@@ -7,35 +12,47 @@ $title-white: #fff;
     box-sizing: border-box;
   }
 }
+
 body {
   max-width: 100%;
   margin: 0;
   font-family: sans-serif;
 }
+
 li {
   list-style: none;
 }
 
-@import 'variables';
-@import 'base';
-@import 'chat';
-@import 'register';
-@import 'login';
-
 .header-container {
   max-width: 65rem;
 
-  background-color: #b3ccff;
+  background-color: $brand-greenish;
 
   &_items {
     display: flex;
     align-items: center;
+
+    color: $brand-brown;
   }
 }
 
-.header-container_items {}
+.header-container_items {
+  color: $brand-brown;
+}
 
-.header-menu {}
+.header-item {
+  padding-left: $gutter * 4;
+
+  color: lighten($brand-tan, 3%)
+}
+
+.header-text {
+  padding-left: $gutter * 4;
+}
+
+.header-menu {
+  color: $brand-brown;
+}
 
 .game_menu {
   display: flex;
@@ -45,7 +62,14 @@ li {
 }
 
 .game-title {
-  color: #000066;
+  padding-bottom: $gutter;
+  border-bottom: $gutter solid transparent;
+
+  color: $brand-brown;
+
+  &:hover {
+    border-bottom: $gutter solid $brand-turquoise;
+  }
 }
 
 .main-content_container {
@@ -66,8 +90,8 @@ li {
 .form-content {}
 
 .info-button {
-  background-color: #ff6600;
-  color: green;
+  // background-color: #ff6600;
+  // color: green;
 }
 
 .game-name_container {
@@ -85,16 +109,28 @@ li {
   flex-direction: column;
   justify-content: center;
 
-  border: 0.1rem solid #666699;
+  border: 0.1rem solid $brand-brown;
 }
 
-.input-item {}
+.input-item {
+  margin: $gutter;
+
+  border: 0;
+  border-bottom: 0.1rem solid $brand-brown;
+
+  background: transparent;
+}
+
+::-webkit-input-placeholder {
+   color: $brand-brown;
+   opacity: 0.4;
+}
 
 .button {
   padding-top: 1rem;
 }
 
 .submit-button {
-  background-color: #ff6600;
-  color: green;
+  // background-color: #ff6600;
+  // color: green;
 }
