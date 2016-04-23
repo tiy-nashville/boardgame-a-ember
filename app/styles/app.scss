@@ -1,8 +1,6 @@
 $title-white: #fff;
-
-*{
+* {
   box-sizing: border-box;
-
   :before,
   :after {
     box-sizing: border-box;
@@ -10,9 +8,9 @@ $title-white: #fff;
 }
 
 body {
+  max-width: 100%;
   margin: 0;
   font-family: sans-serif;
-  max-width: 100%;
 }
 
 li {
@@ -26,7 +24,6 @@ li {
 @import 'login';
 
 .header-container {
-  margin: auto;
   max-width: 65rem;
   background-color: #b3ccff;
   border-bottom: 0.2rem  grey;
@@ -35,9 +32,6 @@ li {
       display: flex;
       align-items: center;
     }
-
-
-
 }
 
 .header-container_items {
@@ -49,36 +43,31 @@ li {
 }
 
 .game_menu {
-  padding-right: 2rem;
   display: flex;
   justify-content: space-between;
 
-
+  padding-right: 2rem;
 }
 
 .game-title {
-color: #000066;
-
+  color: #000066;
 }
 
 .main-content_container {
-  margin: auto;
-  max-width: 65rem;
-  // background-color: purple;
   // display: flex;
+  max-width: 65rem;
+  margin: auto;
 
+  // background-color: purple;
 }
 
-
 .main-content {
-  margin: auto;
   max-width: 65rem;
+  margin: auto;
   padding: 1rem;
-
 }
 
 .main-content_title {
-
 
 }
 
