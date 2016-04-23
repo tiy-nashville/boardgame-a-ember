@@ -4,8 +4,8 @@ import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
   title: attr(),
-  playersMin: attr(),
-  playersMax: attr(),
+  minPlayers: attr(),
+  maxPlayers: attr(),
   description: attr(),
   image: attr(),
   playingTime: attr(),
