@@ -30,7 +30,7 @@ button {
   outline: 0;
 
   background: $brand-greenish;
-  color: $brand-brown;
+  color: darken($brand-turquoise, 20%);
 
   font-size: 1rem;
   cursor: pointer;
