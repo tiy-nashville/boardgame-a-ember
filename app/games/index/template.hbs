@@ -1,0 +1,24 @@
+
+
+    <div name="game-name">
+      <ul class="whatever">
+        {{#each model as |game|}}
+        <li class="game-profile">
+          <div class="image-container">
+            <img src="{{game.image}}" alt="" class="game-pic">
+          </div>
+
+        <div class="game-info-stuff">
+          {{game.title}}
+        {{#link-to "games.info" game.id}}
+          <button class="info-button">Info</button>
+        {{/link-to}}</div>
+
+      </li>
+        {{/each}}
+      </ul>
+
+    </div>
+
+
+{{outlet}}

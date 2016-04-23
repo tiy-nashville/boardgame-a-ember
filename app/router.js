@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('games', {path: '/'}, function() {
-    this.route('info');
+    this.route('info', { path: `/:game_id` });
     this.route('strategy');
     this.route('new');
     this.route('elimination-games');
