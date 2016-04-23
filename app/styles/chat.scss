@@ -22,8 +22,8 @@
   padding: $gutter * 4;
 
   border-radius: 0.19rem;
-  background: $brand-turquoise;
-  color: $brand-greenish;
+  background: $brand-magenta;
+  color: darken($brand-turquoise, 15%);
 }
 
 .post__container {
