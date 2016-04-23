@@ -8,6 +8,10 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('games', {path: '/'}, function() {
     this.route('info');
+    this.route('strategy');
+    this.route('new');
+    this.route('elimination-games');
+    this.route('physical');
   });
   this.route('register');
   this.route('login');
