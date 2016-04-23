@@ -5,22 +5,35 @@
       <h2 class="header-text header-item">BoardMeeting</h2>
     </div>
     <div class="header-menu">
-    <ul class="game_menu">
-      <li class="game-title">Strategy</li>
-      <li class="game-title">KILLERS</li>
-      <li class="game-title">Blow Crap Up</li>
-      <li class="game-title">We All Win</li>
-    </ul>
+      <ul class="game_menu">
+        {{#link-to "games.strategy"}}
+          <li class="game-title">Strategy</li>
+        {{/link-to}}
+
+        {{#link-to "games"}}
+          <li class="game-title">Elimination Games</li>
+        {{/link-to}}
+
+        {{#link-to "games"}}
+          <li class="game-title">Physical Games</li>
+        {{/link-to}}
+
+        {{#link-to "games.new"}}
+          <li class="game-title">Add New</li>
+        {{/link-to}}
+      </ul>
+    </div>
   </div>
-</div>
 </header>
+
 
 <div class="main-content_container">
   <div class="main-content">
     <div class="main-content_title">
       <h4> Games Beotchezzz</h4>
     </div>
-<form class="form-content">Game</form>
-{{outlet}}
-</div>
+    <form class="form-content">Games</form>
+
+    {{outlet}}
+  </div>
 </div>

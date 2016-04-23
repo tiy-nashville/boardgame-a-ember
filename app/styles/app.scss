@@ -11,7 +11,6 @@ $title-white: #fff;
 
 body {
   margin: 0;
-  // color: $title-white;
   font-family: sans-serif;
   max-width: 100%;
 }
@@ -20,10 +19,16 @@ li {
   list-style: none;
 }
 
+@import 'variables';
+@import 'base';
+@import 'chat';
+@import 'register';
+@import 'login';
+
 .header-container {
   margin: auto;
   max-width: 65rem;
-
+  background-color: #b3ccff;
   border-bottom: 0.2rem  grey;
 
     &_items {
@@ -52,9 +57,7 @@ li {
 }
 
 .game-title {
-
-
-
+color: #000066;
 
 }
 
@@ -80,5 +83,45 @@ li {
 }
 
 .form-content {
+
+}
+
+.info-button {
+  color: green;
+  background-color: #ff6600;
+
+}
+
+.game-name_container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50rem;
+  padding-top: 1rem;
+
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.1rem solid #666699;
+
+}
+
+.input-item {
+
+
+}
+
+.button {
+  padding-top: 1rem;
+}
+
+.submit-button {
+  color: green;
+  background-color: #ff6600;
 
 }
