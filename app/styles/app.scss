@@ -1,24 +1,8 @@
-$title-white: #fff;
-
-*{
-  box-sizing: border-box;
-
-  :before,
-  :after {
-    box-sizing: border-box;
-  }
-}
-
-body {
-  margin: 0;
-  // color: $title-white;
-  font-family: sans-serif;
-  max-width: 100%;
-}
-
-li {
-  list-style: none;
-}
+@import 'variables';
+@import 'base';
+@import 'chat';
+@import 'register';
+@import 'login';
 
 .header-container {
   margin: auto;

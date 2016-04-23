@@ -1,4 +1,31 @@
+<h2 class="room-title">(Game Title) Chat Room</h2>
 
 
+<div class="chatroom-container">
+  {{#if session.isAuthenticated}}
+  <div class="chatroom-container__content">
+    <p class="message-text">
+        <span class="created-at">(timestamp)</span>
+        <span class="user-name">(username)</span>
+        <span class="post-content">(message)</span>
+      </p>
+  </div>
+  <form class="post__container"{{action postMessage newPost on="submit"}}>
+    {{input class="post-input" value=newPost placeholder="Start Typing"}}
+    <button class="post-btn">Post</button>
+  </form>
 
-{{outlet}}
+{{else}}
+
+  <div class="denial-page">
+      <p class="denial-text">You must be looged in to view the chat.</p>
+    {{#link-to "login"}}
+      <button class="denial-button">Login</button>
+    {{/link-to}}
+      <p class="denial-text">If you are not already registered, you can do so here.</p>
+    {{#link-to "register"}}
+      <button class="denial-button">Register</button>
+    {{/link-to}}
+  </div>
+  {{/if}}
+</div>

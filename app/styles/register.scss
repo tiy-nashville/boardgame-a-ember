@@ -1,0 +1,56 @@
+.main {
+  margin-top: 2rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  max-width: 75%;
+  margin: auto;
+  background: $title-white;
+  box-shadow: 1px 1px 50px #000000;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1rem;
+}
+
+.form-inputs {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.input-label {
+  padding-right: 0.2rem;
+}
+
+.input-field {
+  flex: 1;
+}
+
+.save-button {
+  align-self: center;
+}
+
+.extra-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.extra-content {
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid #555555;
+  text-align: center;
+}
+
+.register-title {
+  display: flex;
+  justify-content: center;
+}

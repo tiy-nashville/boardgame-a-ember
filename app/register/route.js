@@ -2,6 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    this.store.findAll(`message`);
+    return {
+      email: ``,
+      username: ``,
+      password: ``,
+    };
   },
 });
