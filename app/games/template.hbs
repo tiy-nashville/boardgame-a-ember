@@ -2,8 +2,15 @@
 
     <div name="game-name">
       <ul>
-        <li>game name</li>
-        <li>game pic</li>
+        {{#each model as |game|}}
+        <li>
+          <div class="image-container">
+            <img src="{{game.image}}" alt="" class="game-pic">
+          </div>
+          {{game.title}}
+        </li>
+
+        {{/each}}
       </ul>
 
       {{#link-to "games.info"}}

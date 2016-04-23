@@ -1,9 +1,9 @@
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
+import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
-  name: attr(),
-  type: attr(),
+  title: attr(),
   playersMin: attr(),
   playersMax: attr(),
   description: attr(),
@@ -12,5 +12,6 @@ export default Model.extend({
   designers: attr(),
   publishers: attr(),
   artists: attr(),
-  yearPublished: attr()
+  yearPublished: attr(),
+  room: belongsTo('room'),
 });
