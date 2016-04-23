@@ -51,9 +51,7 @@ li {
 }
 
 .game-title {
-
-
-
+color: #000066;
 
 }
 
@@ -89,17 +87,26 @@ li {
 }
 
 .game-name_container {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 50rem;
   padding-top: 1rem;
 
+}
 
+.container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.1rem solid #666699;
 
 }
 
 .input-item {
+
 
 }
 
