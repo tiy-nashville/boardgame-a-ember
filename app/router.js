@@ -10,6 +10,8 @@ Router.map(function() {
     this.route('info');
     this.route('strategy');
     this.route('new');
+    this.route('elimination-games');
+    this.route('physical');
   });
 });
 

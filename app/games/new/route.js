@@ -4,6 +4,17 @@ export default Ember.Route.extend({
   model() {
     return {
       name: ``,
+      type: ``,
+      playersMin: ``,
+      playersMax:``,
+      description:``,
+      image: ``,
+      playingTime: ``,
+      designers: ``,
+      publishers: ``,
+      publishers: ``,
+      artists: ``,
+      yearPublished: ``,
     };
   },
 });
