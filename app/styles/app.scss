@@ -1,4 +1,5 @@
 $title-white: #fff;
+
 * {
   box-sizing: border-box;
    :before,
@@ -14,6 +15,7 @@ body {
 li {
   list-style: none;
 }
+
 @import 'variables';
 @import 'base';
 @import 'chat';
