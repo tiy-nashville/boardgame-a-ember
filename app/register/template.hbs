@@ -1,0 +1,32 @@
+<div class="main">
+  <div class="register-form">
+    <form class="form-field">
+
+      <p class="form-inputs">
+        <label class="input-label">Email:</label>
+        {{input class="input-field" type="text" placeholder="Email" value=model.email}}
+      </p>
+
+      <p class="form-field">
+        <label class="input-label">Password:</label>
+        {{input class="input-field" type="password" placeholder="Password" value=model.password}}
+      </p>
+
+      <p class="form-field">
+        <label class="input-label">Username:</label>
+        {{input class="input-field" type="text" placeholder="Username" value=model.username}}
+      </p>
+
+      <button class="save-button">Register</button>
+    </form>
+
+    <div class="extra-container">
+      <div class="extra-content">
+        <p class="extra-text">Already Registered? Click below to log in</p>
+        {{#link-to "login"}}
+        <button class="login-button">Log In</button>
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+</div>
