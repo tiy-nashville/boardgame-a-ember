@@ -1,10 +1,10 @@
 <div class="game-name_container">
   <form {{action saveGames model on="submit"}} class="game-content">
     <div class="container">
-      {{input class="input-item" value=model.name type=text placeholder="Add Name"}}
-      {{input class="input-item" value=model.type type=text placeholder="Add Type"}}
-      {{input class="input-item" value=model.playersMin type=text placeholder="Add Players Min"}}
-      {{input class="input-item" value=model.playersMax type=text placeholder="Add Players Max"}}
+      {{input class="input-item" value=model.title type=text placeholder="Add Name"}}
+      {{input class="input-item" value=model.mechanics type=text placeholder="Add Type"}}
+      {{input class="input-item" value=model.minPlayers type=text placeholder="Add Players Min"}}
+      {{input class="input-item" value=model.maxPlayers type=text placeholder="Add Players Max"}}
       {{input class="input-item" value=model.description type=text placeholder="Add Description"}}
       {{input class="input-item" value=model.image type=text placeholder="Add Image"}}
       {{input class="input-item" value=model.playingTime type=text placeholder="Add Playing Time"}}
