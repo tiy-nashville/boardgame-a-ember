@@ -1,6 +1,8 @@
 .chatroom-container {
   display: flex;
+  flex-direction: column;
 
+  margin: $gutter;
 }
 
 .denial-page {

@@ -1,0 +1,48 @@
+.header-container {
+  max-width: 65rem;
+
+  background-color: $brand-greenish;
+
+  &_items {
+    display: flex;
+    align-items: center;
+
+    color: $brand-brown;
+  }
+}
+
+.header-container_items {
+  color: $brand-brown;
+}
+
+.header-item {
+  padding-left: $gutter * 4;
+
+  color: lighten($brand-tan, 3%)
+}
+
+.header-text {
+  padding-left: $gutter * 4;
+}
+
+.header-menu {
+  color: $brand-brown;
+}
+
+.game_menu {
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 2rem;
+}
+
+.game-title {
+  padding-bottom: $gutter;
+  border-bottom: $gutter solid transparent;
+
+  color: $brand-brown;
+
+  &:hover {
+    border-bottom: $gutter solid $brand-turquoise;
+  }
+}
