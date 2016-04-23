@@ -6,6 +6,6 @@ export default Ember.Controller.extend({
 
     gamer.save().then(() => {
       this.transitionToRoute(`games`);
-    })
-  }
+    });
+  },
 });

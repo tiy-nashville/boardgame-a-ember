@@ -17,14 +17,14 @@
 
 {{else}}
 
-  <div class="denial-form">
+  <div class="denial-page">
       <p class="denial-text">You must be looged in to view the chat.</p>
     {{#link-to "login"}}
-      <button class="denial button">Login</button>
+      <button class="denial-button">Login</button>
     {{/link-to}}
       <p class="denial-text">If you are not already registered, you can do so here.</p>
     {{#link-to "register"}}
-      <button class="denial button">Register</button>
+      <button class="denial-button">Register</button>
     {{/link-to}}
   </div>
   {{/if}}
