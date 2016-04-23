@@ -1,76 +1,9 @@
 @import 'variables';
 @import 'base';
+@import 'header';
 @import 'chat';
 @import 'register';
 @import 'login';
-
-
-* {
-  box-sizing: border-box;
-   :before,
-  :after {
-    box-sizing: border-box;
-  }
-}
-
-body {
-  max-width: 100%;
-  margin: 0;
-  font-family: sans-serif;
-}
-
-li {
-  list-style: none;
-}
-
-.header-container {
-  max-width: 65rem;
-
-  background-color: $brand-greenish;
-
-  &_items {
-    display: flex;
-    align-items: center;
-
-    color: $brand-brown;
-  }
-}
-
-.header-container_items {
-  color: $brand-brown;
-}
-
-.header-item {
-  padding-left: $gutter * 4;
-
-  color: lighten($brand-tan, 3%)
-}
-
-.header-text {
-  padding-left: $gutter * 4;
-}
-
-.header-menu {
-  color: $brand-brown;
-}
-
-.game_menu {
-  display: flex;
-  justify-content: space-between;
-
-  padding-right: 2rem;
-}
-
-.game-title {
-  padding-bottom: $gutter;
-  border-bottom: $gutter solid transparent;
-
-  color: $brand-brown;
-
-  &:hover {
-    border-bottom: $gutter solid $brand-turquoise;
-  }
-}
 
 .main-content_container {
   max-width: 65rem;
@@ -108,8 +41,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  border: 0.1rem solid $brand-brown;
 }
 
 .input-item {
@@ -119,11 +50,6 @@ li {
   border-bottom: 0.1rem solid $brand-brown;
 
   background: transparent;
-}
-
-::-webkit-input-placeholder {
-   color: $brand-brown;
-   opacity: 0.4;
 }
 
 .button {

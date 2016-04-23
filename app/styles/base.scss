@@ -37,7 +37,15 @@ button {
 }
 
 input {
+  padding: $gutter * 3;
+  padding-bottom: $gutter;
+
   outline: 0;
+}
+
+::-webkit-input-placeholder {
+   color: $brand-brown;
+   opacity: 0.4;
 }
 
 a:link {
