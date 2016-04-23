@@ -11,7 +11,6 @@ $title-white: #fff;
 
 body {
   margin: 0;
-  // color: $title-white;
   font-family: sans-serif;
   max-width: 100%;
 }
@@ -23,7 +22,7 @@ li {
 .header-container {
   margin: auto;
   max-width: 65rem;
-
+  background-color: #b3ccff;
   border-bottom: 0.2rem  grey;
 
     &_items {
@@ -80,5 +79,33 @@ li {
 }
 
 .form-content {
+
+}
+
+.info-button {
+  color: green;
+  background-color: #ff6600;
+
+}
+
+.game-name_container {
+  max-width: 50rem;
+  padding-top: 1rem;
+
+
+
+}
+
+.input-item {
+
+}
+
+.button {
+  padding-top: 1rem;
+}
+
+.submit-button {
+  color: green;
+  background-color: #ff6600;
 
 }
