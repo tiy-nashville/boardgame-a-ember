@@ -19,6 +19,12 @@ li {
   list-style: none;
 }
 
+@import 'variables';
+@import 'base';
+@import 'chat';
+@import 'register';
+@import 'login';
+
 .header-container {
   margin: auto;
   max-width: 65rem;

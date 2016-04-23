@@ -13,6 +13,8 @@ Router.map(function() {
     this.route('elimination-games');
     this.route('physical');
   });
+  this.route('register');
+  this.route('login');
 });
 
 export default Router;
