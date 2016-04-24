@@ -11,8 +11,8 @@ body {
   max-width: 100%;
   margin: 0;
 
-  background: $brand-tan;
-  color: $brand-brown;
+  background: $brand-white;
+  color: $brand-baby-blue;
 
   font-family: sans-serif;
 }
@@ -29,8 +29,9 @@ button {
 
   outline: 0;
 
-  background: $brand-greenish;
-  color: darken($brand-turquoise, 20%);
+  background: $brand-redish;
+  color: $brand-white;
+
 
   font-size: 1rem;
   cursor: pointer;
@@ -44,7 +45,7 @@ input {
 }
 
 ::-webkit-input-placeholder {
-   color: $brand-brown;
+   color: $brand-redish;
    opacity: 0.4;
 }
 
@@ -53,5 +54,5 @@ a:link {
 }
 
 header {
-  background-color: $brand-greenish;
+  background-color: $brand-white;
 }

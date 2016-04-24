@@ -1,0 +1,19 @@
+.form-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+  .input-field {
+    border: 0;
+    border-bottom: $brand-border;
+
+    margin-bottom: $gutter;
+    padding-bottom: $gutter;
+
+    background: transparent;
+    font-size: 1.1rem;
+  }
+
+  .input-label {
+  }
