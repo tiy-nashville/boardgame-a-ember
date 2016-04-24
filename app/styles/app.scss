@@ -4,72 +4,7 @@
 @import 'chat';
 @import 'register';
 @import 'login';
-
-.main-content_container {
-  max-width: 65rem;
-
-  margin: auto;
-}
-
-.main-content {
-  max-width: 65rem;
-
-  margin: auto;
-  padding: 1rem;
-}
-
-.main-content_title {}
-
-.form-content {}
-
-.info-button {
-  // background-color: #ff6600;
-  // color: green;
-}
-
-.game-profile {
-  margin: 2rem;
-}
-
-.whatever {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 65rem;
-}
-
-.game-name_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  max-width: 50rem;
-
-  padding-top: 1rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.input-item {
-  margin: $gutter;
-
-  border: 0;
-  border-bottom: 0.1rem solid $brand-brown;
-
-  background: transparent;
-}
-
-.button {
-  padding-top: 1rem;
-}
-
-.submit-button {
-  // background-color: #ff6600;
-  // color: green;
-}
+@import 'add-new';
 
 .image-container {
   width: 20rem;
@@ -84,5 +19,5 @@
   align-items: center;
   justify-content: space-between;
   max-width: 20rem;
-  font-size: 2rem;
+  font-size: 1rem;
 }

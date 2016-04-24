@@ -1,0 +1,52 @@
+.game-content__container {
+  max-width: 65rem;
+
+  margin: auto;
+}
+
+.main-content {
+  max-width: 65rem;
+
+  margin: auto;
+  padding: 1rem;
+}
+
+.game-profile {
+  margin: 2rem;
+}
+
+.game-ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 65rem;
+}
+
+.game-name__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 100%;
+
+  padding-top: $gutter;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-item {
+  margin: $gutter;
+
+  border: 0;
+  border-bottom: $brand-border;
+
+  background: transparent;
+  color: $brand-brown;
+}
+
+.button {
+  padding-top: 1rem;
+}
