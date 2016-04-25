@@ -4,16 +4,13 @@
   align-items: center;
 }
 
-  .input-field {
-    border: 0;
-    border-bottom: $brand-border;
+.input-field {
+  margin-bottom: $gutter;
+  padding-bottom: $gutter;
+  border: 0;
+  border-bottom: $brand-border;
+  background: transparent;
+  font-size: 1.1rem;
+}
 
-    margin-bottom: $gutter;
-    padding-bottom: $gutter;
-
-    background: transparent;
-    font-size: 1.1rem;
-  }
-
-  .input-label {
-  }
+.input-label {}
