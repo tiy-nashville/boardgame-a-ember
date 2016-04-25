@@ -41,7 +41,7 @@ button {
   }
 
   &:active {
-    background: darken($brand-redish, 12%);
+    background: $brand-redish;
   }
 }
 
