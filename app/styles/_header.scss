@@ -4,7 +4,7 @@
   background: $brand-baby-blue;
 
   &__inner-container {
-    max-width: 65rem;
+    max-width: $max-content-width;
 
     margin: auto;
 
@@ -42,7 +42,13 @@
   display: flex;
   justify-content: space-between;
 
-  padding-right: 2rem;
+  &:first-of-type {
+    padding-left: $gutter * 10;
+  }
+
+  &:last-of-type {
+    padding-right: $gutter * 10;
+  }
 }
 
 .game-title {

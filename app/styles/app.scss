@@ -5,10 +5,14 @@
 @import 'register';
 @import 'login';
 @import 'add-new';
+@import 'main-content';
 
-.image-container {
+.image-container__description {
   position: relative;
-  max-width: 8rem;
+  max-width: 20rem;
+
+  margin: $gutter * 4;
+  margin-left: 0;
 
   border-radius: $gutter;
 
@@ -21,24 +25,11 @@
   }
 }
 
-.game-pic {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.game-name {
+  color: $brand-brown;
 
-  width: 100%;
-}
-
-
-.game-info-stuff {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  max-width: 20rem;
-  padding: $gutter * 2;
-
-  font-size: 1rem;
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }

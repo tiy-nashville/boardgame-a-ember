@@ -1,0 +1,102 @@
+.game-content__container {
+  max-width: $max-content-width;
+
+  margin: auto;
+}
+
+.main-content {
+  max-width: $max-content-width;
+
+  margin: auto;
+  padding: $gutter;
+}
+
+
+.game-ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: $max-content-width;
+}
+
+.game-name__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 100%;
+
+  padding-top: $gutter;
+}
+
+
+.image-container {
+  position: relative;
+  max-width: 100%;
+
+  border-radius: $gutter;
+
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    padding-top: 100%;
+    content: '';
+  }
+}
+
+.game-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+}
+
+.game-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: calc(100% / 4 - 0.4rem);
+  padding: 0 0.4rem 1.6rem;
+}
+
+
+// .game-info-stuff {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//
+//   max-width: 20rem;
+//   padding: $gutter * 2;
+//
+//   font-size: 1rem;
+// }
+
+.info-ul {
+  display: flex;
+  flex-direction: column;
+
+  padding: $gutter * 2 0;
+  &__fields {
+    margin: 0;
+    padding-left: $gutter;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+  &__players {}
+}
+
+.info-button {
+  align-self: center;
+
+  width: 100%;
+
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+}
