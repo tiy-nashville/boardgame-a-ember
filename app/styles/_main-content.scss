@@ -86,10 +86,14 @@
   }
 
   &__title {
+    margin: 0;
     font-size: 1.2rem;
   }
 
-  &__players {}
+  &__players {
+    margin: 0;
+    padding: $gutter * 2 0;
+  }
 }
 
 .info-button {
