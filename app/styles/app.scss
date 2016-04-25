@@ -7,9 +7,48 @@
 @import 'add-new';
 @import 'main-content';
 
+.game-name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-name {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0;
+
+  color: $brand-brown;
+
+  &__title {
+    flex-grow: 1;
+
+    margin: 0;
+    padding-left: $gutter * 2;
+
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.game-info {
+  max-width: 50%;
+
+  margin: $gutter * 4;
+  margin-right: 0;
+
+  &__description-heading {
+    margin: 0;
+    margin-bottom: $gutter * 3;
+
+    border-bottom: $brand-border;
+  }
+}
+
 .image-container__description {
+  display: flex;
   position: relative;
-  max-width: 20rem;
+  max-width: 100%;
 
   margin: $gutter * 4;
   margin-left: 0;
@@ -18,18 +57,11 @@
 
   overflow: hidden;
 
+  align-self: center;
+
   &:before {
     display: block;
     padding-top: 100%;
     content: '';
-  }
-}
-
-.game-name {
-  color: $brand-brown;
-
-  &__title {
-    font-size: 2rem;
-    font-weight: bold;
   }
 }

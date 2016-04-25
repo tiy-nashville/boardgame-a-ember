@@ -1,17 +1,22 @@
-<div class="game-name">
-  <ul>
+<div class="game-name-container">
+  <h3 class="game-name__title">
+    {{model.game.title}}
+  </h3>
+  <ul class="game-name">
     <li class="game-name__title">
-      {{model.game.title}}
       <div class="image-container__description">
         <img src="{{model.game.image}}" alt="" class="game-pic">
       </div>
     </li>
-    <li class="game-item">{{model.game.description}}</li>
-    <p class="game-item">Players: {{model.game.minPlayers}} - {{model.game.maxPlayers}}</p>
-    <p class="game-item">Designers - {{model.game.designers}}</p>
-    <p class="game-item">Publishers - {{model.game.publishers}}</p>
-    <p class="game-item">Artists - {{model.game.artists}}</p>
-    <p class="game-item">Year Published - {{model.game.yearPublished}}</p>
+    <li class="game-info">
+      <h2 class="game-info__description-heading">Game Information</h2>
+      <li class="game-item">{{model.game.description}}</li>
+      <p class="game-item">Players: {{model.game.minPlayers}} - {{model.game.maxPlayers}}</p>
+      <p class="game-item">Designers - {{model.game.designers}}</p>
+      <p class="game-item">Publishers - {{model.game.publishers}}</p>
+      <p class="game-item">Artists - {{model.game.artists}}</p>
+      <p class="game-item">Year Published - {{model.game.yearPublished}}</p>
+    </li>
   </ul>
 
 </div>
