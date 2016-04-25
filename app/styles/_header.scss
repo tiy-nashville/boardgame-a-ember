@@ -1,14 +1,14 @@
 .header-container {
   width: 100%;
 
-  background: $brand-baby-blue;
+  background: $brand-redish;
 
   &__inner-container {
     max-width: $max-content-width;
 
     margin: auto;
 
-    background-color: $brand-baby-blue;
+    background-color: $brand-redish;
   }
 
   &_items {
@@ -52,12 +52,18 @@
 }
 
 .game-title {
-  padding-bottom: $gutter;
+  padding: $gutter * 2;
   border-bottom: $gutter solid transparent;
+  border-radius: 0.1rem;
 
   color: $brand-white;
 
   &:hover {
-    border-bottom: $gutter solid $brand-redish;
+    border-bottom: $gutter solid $brand-brown;
+    background: lighten($brand-redish, 10%);
+  }
+
+  &:action {
+    background: $brand-redish;
   }
 }
