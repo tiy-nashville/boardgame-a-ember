@@ -12,7 +12,7 @@ body {
   margin: 0;
 
   background: $brand-white;
-  color: $brand-baby-blue;
+  color: $brand-brown;
 
   font-family: sans-serif;
 }
@@ -32,9 +32,17 @@ button {
   background: $brand-redish;
   color: $brand-white;
 
-
   font-size: 1rem;
+  text-shadow: 0.1rem 0.1rem $brand-brown;
   cursor: pointer;
+
+  &:hover {
+    background: darken($brand-redish, 4%);
+  }
+
+  &:active {
+    background: darken($brand-redish, 12%);
+  }
 }
 
 input {

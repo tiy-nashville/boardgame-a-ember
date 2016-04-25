@@ -1,24 +1,26 @@
-
-
-    <div name="game-name">
-      <ul class="game-ul">
-        {{#each model as |game|}}
-        <li class="game-profile">
-          <div class="image-container">
-            <img src="{{game.image}}" alt="" class="game-pic">
-          </div>
+<div name="game-name">
+  <ul class="game-ul">
+    {{#each model as |game|}}
+      <li class="game-profile">
+        <div class="image-container">
+          <img src="{{game.image}}" alt="" class="game-pic">
+        </div>
 
         <div class="game-info-stuff">
-          {{game.title}}
-        {{#link-to "games.info" game.id}}
-          <button class="info-button">Info</button>
-        {{/link-to}}</div>
+          <ul class="info-ul">
+            <li class="info-ul__fields info-ul__title">{{game.title}}</li>
+            <li class="info-ul__fields info-ul__players">{{model.game.min-players}}</li>
+          </ul>
+          {{#link-to "games.info" game.id}}
+            <button class="info-button">Info</button>
+          {{/link-to}}
+        </div>
 
       </li>
-        {{/each}}
-      </ul>
+    {{/each}}
+  </ul>
 
-    </div>
+</div>
 
 
 {{outlet}}
