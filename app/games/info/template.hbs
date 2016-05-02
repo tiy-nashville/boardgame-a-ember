@@ -24,13 +24,13 @@
 <h2 class="room-title">{{model.game.title}} Chat Room</h2>
 
 <div class="chatroom-container">
-  {{#if session.isAuthenticated}}
+  {{!-- {{#if session.isAuthenticated}} --}}
     <div class="chatroom-container__content">
       {{#each model.messages as |message|}}
         <p class="message-text">
-          <span class="created-at">(timestamp)</span>
-          <span class="user-name">(username)</span>
-          <span class="post-content">(message)</span>
+          <span class="created-at">:date:</span>
+          <span class="user-name">notJustAPieceOfCode:</span>
+          <span class="post-content">{{message.content}}</span>
         </p>
       {{/each}}
     </div>
@@ -39,7 +39,7 @@
       <button class="post-btn">Giggity</button>
     </form>
 
-  {{else}}
+  {{!-- {{else}} --}}
 
     <div class="denial-page">
       <p class="denial-text">You must be looged in to view the chat.</p>
@@ -51,5 +51,5 @@
         <button class="denial-button">Register</button>
       {{/link-to}}
     </div>
-  {{/if}}
+  {{!-- {{/if}} --}}
 </div>

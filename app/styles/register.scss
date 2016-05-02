@@ -5,7 +5,7 @@
 .register-form {
   display: flex;
   flex-direction: column;
-  width: 25rem;
+  width: 30rem;
   max-width: 75%;
   margin: auto;
   background: $brand-white;
@@ -17,15 +17,6 @@
   flex-direction: column;
   margin: 0;
   padding: 1rem;
-}
-
-.form-inputs {
-  display: flex;
-  padding-left: 1rem;
-}
-
-.input-label {
-  padding-right: 0.2rem;
 }
 
 .input-field {

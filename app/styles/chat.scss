@@ -3,6 +3,7 @@
   flex-direction: column;
 
   margin: $gutter;
+  border-radius: 0.19rem;
 }
 
 .denial-page {
@@ -19,11 +20,23 @@
 }
 
 .message-text {
-  padding: $gutter * 4;
+  margin: 0;
+  padding: $gutter 0 $gutter * 4 $gutter * 4;
 
-  border-radius: 0.19rem;
-  background: $brand-redish;
-  color: darken($brand-baby-blue, 15%);
+  background: transparent;
+  color: $brand-brown;
+
+  &:last-of-type {
+    margin-bottom: $gutter * 4;
+  }
+}
+
+.user-name {
+  color: $brand-redish;
+}
+
+.created-at {
+  color: $brand-greenish;
 }
 
 .post__container {
@@ -41,6 +54,8 @@
   border-bottom: $brand-border;
 
   background: transparent;
+
+  font-size: 1rem;
 }
 
 .post-btn {

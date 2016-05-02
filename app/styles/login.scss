@@ -1,10 +1,11 @@
 .form-inputs {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
 .input-field {
+  width: 100%;
+
   margin-bottom: $gutter;
   padding-bottom: $gutter;
   border: 0;
@@ -13,4 +14,10 @@
   font-size: 1.1rem;
 }
 
-.input-label {}
+.input-label {
+  width: 5rem;
+
+  padding-right: $gutter;
+
+  text-align: right;
+}
